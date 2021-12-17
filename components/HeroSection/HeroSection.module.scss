@@ -65,4 +65,36 @@
     transform: translate(35%, 40%);
     transition: all 400ms ease;
   }
+  @include mdportrait {
+    flex-direction: column;
+    padding-top: 90px;
+    .texts {
+      .title {
+        font-size: 50px;
+        span {
+          font-size: 45px;
+        }
+      }
+      .desc {
+        font-size: 18px;
+      }
+      .btnHireMe {
+        margin-top: 10px;
+        height: 40px;
+        padding: 0 30px;
+        font-size: 18px;
+      }
+    }
+    .bg {
+      z-index: 1;
+      flex: 1;
+      background: url("/assets/bg/me.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+    .bgCircle {
+      transform: translate(35%, 40%) scale(0.7);
+    }
+  }
 }
