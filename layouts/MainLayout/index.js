@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import Scrollbars from "react-custom-scrollbars";
+import dynamic from "next/dynamic";
 import Header from "../../components/Header";
 import MainNavbar from "../../components/MainNavbar";
 import classNames from "./MainLayout.module.scss";
+
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
+});
 
 function MainLayout({ children }) {
   const [activeNav, setActiveNav] = useState(false);
@@ -25,6 +30,14 @@ function MainLayout({ children }) {
       <Header />
       <MainNavbar activated={activeNav} />
       {children}
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={22}
+        color="125,42,232"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={2}
+      />
     </Scrollbars>
   );
 }
