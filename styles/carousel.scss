@@ -1,0 +1,14 @@
+.carousel-root {
+  .carousel-slider {
+    height: 100%;
+    .slider-wrapper,
+    .slider {
+      height: 100%;
+    }
+  }
+  .control-dots,
+  .carousel-status,
+  button {
+    display: none;
+  }
+}
