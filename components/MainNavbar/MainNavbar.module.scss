@@ -28,7 +28,8 @@
       font-size: 18px;
       color: $primary-color;
       margin-left: auto;
-      .menuItem {
+      .menuItem,
+      a {
         padding: 0 15px;
         color: $text-color;
       }

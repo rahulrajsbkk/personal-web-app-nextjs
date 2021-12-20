@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import classNames from "./MainNavbar.module.scss";
 import { MAIN_LOGO } from "../../configs";
 
@@ -20,15 +21,12 @@ function MainNavbar({ activated }) {
           />
         </div>
         <div className={classNames.navMenu}>
-          <a href="#home" className={classNames.menuItem}>
+          <Link href="/" className={classNames.menuItem}>
             Home
-          </a>
-          <a href="#showcase" className={classNames.menuItem}>
-            Showcase
-          </a>
-          <a href="#partner" className={classNames.menuItem}>
-            Partner with us
-          </a>
+          </Link>
+          <Link href="/about" className={classNames.menuItem}>
+            About
+          </Link>
           {/* <div className={classNames.menuItem}>Blog</div> */}
           <div className={classNames.vl}></div>
           <a href="#contact" className={classNames.menuItem}>

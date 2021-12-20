@@ -33,7 +33,7 @@ function MainLayout({ children }) {
       <AnimatedCursor
         innerSize={8}
         outerSize={22}
-        color="125,42,232"
+        color="11,98,255"
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={2}
