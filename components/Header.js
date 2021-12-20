@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Script from "next/script";
 import { SITE_TITLE, SITE_DESC } from "../configs";
 
 function Header() {
@@ -30,30 +29,16 @@ function Header() {
         <link
           rel="mask-icon"
           href="/favicons/safari-pinned-tab.svg"
-          color="#5f002a"
+          color="#0b62ff"
         />
-        <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#5f002a" />
+        <meta name="msapplication-TileColor" content="#0b62ff" />
         <meta
           name="msapplication-config"
           content="/favicons/browserconfig.xml"
         />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Script
-        id="stripe-js"
-        src="https://www.googletagmanager.com/gtag/js?id=G-4MLDEV971Q"
-        onLoad={() => {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-          gtag("config", "G-4MLDEV971Q");
-          console.log(`dataLayer`, dataLayer);
-        }}
-      />
     </>
   );
 }

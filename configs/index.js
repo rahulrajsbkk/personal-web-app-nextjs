@@ -1,5 +1,4 @@
-export const SITE_TITLE =
-  "Wintbe.com | Fast, Secure, Affordable way to launch your new website. Free hosting and support";
+export const SITE_TITLE = "Rahl Raj S B | Javascript Developer";
 export const SITE_DESC =
-  "Fast, Secure, Affordable way to launch your new free website with base media, ready to launch, Dozens of designs, mobile-friendly with free hosting and support.";
+  "I am A JavaScript Developer Whou Could Handle FullStack Development Wth Languages React,React-Native and Node.js And Also Have The Knoledge In Kotlin,Flutter,MongoDb and Python";
 export const MAIN_LOGO = "/assets/logos/logoFull.svg";
