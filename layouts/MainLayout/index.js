@@ -12,24 +12,26 @@ const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
 function MainLayout({ children }) {
   const [activeNav, setActiveNav] = useState(false);
   return (
-    <Scrollbars
-      universal
-      autoHide
-      className={classNames.container}
-      renderTrackVertical={(props) => (
-        <div {...props} className={classNames.scrollTrack} />
-      )}
-      renderView={(props) => (
-        <div {...props} className={classNames.containerIn} />
-      )}
-      onScrollFrame={(value) => {
-        setActiveNav(value?.scrollTop > 300);
-        console.log(`value`, value);
-      }}
-    >
-      <Header />
-      <MainNavbar activated={activeNav} />
-      {children}
+    <>
+      <Scrollbars
+        universal
+        autoHide
+        className={classNames.container}
+        renderTrackVertical={(props) => (
+          <div {...props} className={classNames.scrollTrack} />
+        )}
+        renderView={(props) => (
+          <div {...props} className={classNames.containerIn} />
+        )}
+        onScrollFrame={(value) => {
+          setActiveNav(value?.scrollTop > 300);
+          console.log(`value`, value);
+        }}
+      >
+        <Header />
+        <MainNavbar activated={activeNav} />
+        {children}
+      </Scrollbars>
       <AnimatedCursor
         innerSize={8}
         outerSize={22}
@@ -38,7 +40,7 @@ function MainLayout({ children }) {
         innerScale={0.7}
         outerScale={2}
       />
-    </Scrollbars>
+    </>
   );
 }
 

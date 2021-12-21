@@ -17,30 +17,36 @@ function AboutSection() {
           <div className={classNames.details}>
             <div className={classNames.item}>
               Name:&nbsp;&nbsp;
+              <wbr />
               <span>Rahul Raj S B</span>
             </div>
             <div className={classNames.item}>
               Age:&nbsp;&nbsp;
+              <wbr />
               <span>{getAge()} Years</span>
             </div>
             <div className={classNames.item}>
               Phone:&nbsp;&nbsp;
+              <wbr />
               <a href="tel:+917559861279">
                 <span>+91 7559861279</span>
               </a>
             </div>
             <div className={classNames.item}>
               Email:&nbsp;&nbsp;
+              <wbr />
               <a href="mailto:rrsbkk@gmail.com">
                 <span>rrsbkk@gmail.com</span>
               </a>
             </div>
             <div className={classNames.item}>
               Languages:&nbsp;&nbsp;
+              <wbr />
               <span>English,Malayalam</span>
             </div>
             <div className={classNames.item}>
               Github:&nbsp;&nbsp;
+              <wbr />
               <a
                 href="https://github.com/rahulrajsbkk"
                 target="_blank"
@@ -51,6 +57,7 @@ function AboutSection() {
             </div>
             <div className={classNames.item}>
               LinkedIn:&nbsp;&nbsp;
+              <wbr />
               <a
                 href="https://www.linkedin.com/in/rahulrajsb/"
                 target="_blank"
@@ -61,6 +68,7 @@ function AboutSection() {
             </div>
             <div className={classNames.item}>
               CodersRank:&nbsp;&nbsp;
+              <wbr />
               <a
                 href="https://profile.codersrank.io/user/rahulrajsbkk"
                 target="_blank"
