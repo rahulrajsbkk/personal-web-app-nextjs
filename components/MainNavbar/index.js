@@ -29,9 +29,9 @@ function MainNavbar({ activated }) {
           </Link>
           {/* <div className={classNames.menuItem}>Blog</div> */}
           <div className={classNames.vl}></div>
-          <a href="#contact" className={classNames.menuItem}>
+          <Link href="/contact" className={classNames.menuItem}>
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
