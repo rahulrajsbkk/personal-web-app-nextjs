@@ -21,7 +21,9 @@ function HeroSection() {
           Full-stack developer with high expertice in JavaScript and quick
           learner to any language
         </div>
-        <div className={`link ${classNames.btnHireMe}`}>Hire Me</div>
+        <a href="mailto:rrsbkk@gmail.com" className={classNames.btnHireMe}>
+          Hire Me
+        </a>
       </div>
       <div className={classNames.bg} />
     </section>
