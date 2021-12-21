@@ -87,6 +87,24 @@ function AboutSection() {
             </div>
           </a>
         </div>
+        <div className={classNames.countCards}>
+          <div className={classNames.card}>
+            <div className={classNames.count}>3</div>
+            <div className={classNames.label}>YEARS OF EXPERIENCE</div>
+          </div>
+          <div className={classNames.card}>
+            <div className={classNames.count}>80</div>
+            <div className={classNames.label}>REACT.JS PROJECTS</div>
+          </div>
+          <div className={classNames.card}>
+            <div className={classNames.count}>6</div>
+            <div className={classNames.label}>REACT-NATIVE PROJECTS</div>
+          </div>
+          <div className={classNames.card}>
+            <div className={classNames.count}>3</div>
+            <div className={classNames.label}>NODE.JS PROJECTS</div>
+          </div>
+        </div>
       </div>
     </section>
   );
