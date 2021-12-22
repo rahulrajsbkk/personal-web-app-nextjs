@@ -28,10 +28,12 @@
       font-size: 18px;
       color: $primary-color;
       margin-left: auto;
-      .menuItem,
-      a {
+      .menuItem {
         padding: 0 15px;
         color: $text-color;
+        &.true {
+          font-weight: 600;
+        }
       }
       .vl {
         height: 30px;

@@ -6,7 +6,6 @@ import classNames from "./FooterNavbar.module.scss";
 
 function FooterNavbar() {
   const { pathname } = useRouter();
-  console.log(`router`, pathname);
   return (
     <nav className={classNames.footerNavbar}>
       <div className={classNames.navMenu}>

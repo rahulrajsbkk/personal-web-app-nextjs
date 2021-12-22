@@ -1,10 +1,12 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import classNames from "./MainNavbar.module.scss";
 import { MAIN_LOGO } from "../../configs";
 
 function MainNavbar({ activated }) {
+  const { pathname } = useRouter();
   return (
     <nav className={`${classNames.mainNavbar} ${classNames[activated]} `}>
       <div className={classNames.navWrap}>
@@ -21,16 +23,33 @@ function MainNavbar({ activated }) {
           />
         </div>
         <div className={classNames.navMenu}>
-          <Link href="/" className={classNames.menuItem}>
-            Home
+          <Link href="/">
+            <a
+              className={`${classNames.menuItem} ${
+                classNames[pathname.toLowerCase() === "/"]
+              }`}
+            >
+              Home
+            </a>
           </Link>
-          <Link href="/about" className={classNames.menuItem}>
-            About
+          <Link href="/about">
+            <a
+              className={`${classNames.menuItem} ${
+                classNames[pathname.toLowerCase() === "/about"]
+              }`}
+            >
+              About
+            </a>
           </Link>
-          {/* <div className={classNames.menuItem}>Blog</div> */}
           <div className={classNames.vl}></div>
-          <Link href="/contact" className={classNames.menuItem}>
-            Contact
+          <Link href="/contact">
+            <a
+              className={`${classNames.menuItem} ${
+                classNames[pathname.toLowerCase() === "/contact"]
+              }`}
+            >
+              Contact
+            </a>
           </Link>
         </div>
       </div>
