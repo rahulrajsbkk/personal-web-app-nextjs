@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Header from "../../components/Header";
 import MainNavbar from "../../components/MainNavbar";
 import classNames from "./MainLayout.module.scss";
+import FooterNavbar from "../../components/FooterNavbar";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -31,6 +32,7 @@ function MainLayout({ children }) {
         <Header />
         <MainNavbar activated={activeNav} />
         {children}
+        <FooterNavbar />
       </Scrollbars>
       <AnimatedCursor
         innerSize={8}

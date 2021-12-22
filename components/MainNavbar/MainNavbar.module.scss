@@ -112,6 +112,7 @@
   }
 
   @include md {
+    display: none;
     .navMenu,
     .navExpand {
       display: none !important;

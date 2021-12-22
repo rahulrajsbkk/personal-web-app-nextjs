@@ -40,5 +40,8 @@
   }
   @include mdportrait {
     zoom: 1;
+    .containerIn {
+      padding-bottom: 70px;
+    }
   }
 }
