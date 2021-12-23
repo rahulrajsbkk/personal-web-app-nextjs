@@ -1,10 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import classNames from "./AboutSection.module.scss";
 
 function AboutSection() {
   return (
-    <section className={classNames.AboutSection}>
+    <motion.div
+      initial={{ x: "10%", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: "-10%", opacity: 0 }}
+      className={classNames.AboutSection}
+    >
       <div className={classNames.title}>
         <span className={classNames.main}>RESUME</span>
         <div className={classNames.inTitle}>
@@ -114,7 +120,7 @@ function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }
 

@@ -5,15 +5,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 function MyApp({ Component, pageProps, router }) {
-  const url = `https://wallis.dev${router.route}`;
   return (
     <MainLayout>
-      <AnimatePresence
-        exitBeforeEnter
-        initial={false}
-        onExitComplete={() => window.scrollTo(0, 0)}
-      >
-        <Component {...pageProps} canonical={url} key={url} />
+      <AnimatePresence exitBeforeEnter initial={false}>
+        <Component {...pageProps} key={router.route} />
       </AnimatePresence>
       <ToastContainer
         position="top-right"
