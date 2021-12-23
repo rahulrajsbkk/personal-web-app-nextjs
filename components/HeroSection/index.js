@@ -2,18 +2,12 @@ import React from "react";
 import Image from "next/image";
 import classNames from "./HeroSection.module.scss";
 import useWindowDimensions from "../../utils/WindowSize";
-import { motion } from "framer-motion";
 
 function HeroSection() {
   const { width, height } = useWindowDimensions();
   let base = Math.min(width, height);
   return (
-    <motion.div
-      initial={{ x: "10%", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: "-10%", opacity: 0 }}
-      className={classNames.HeroSection}
-    >
+    <section className={classNames.HeroSection} id="home">
       <div
         className={classNames.bgCircle}
         style={{ height: base * 1.4, width: base * 1.4 }}
@@ -32,7 +26,7 @@ function HeroSection() {
         </a>
       </div>
       <div className={classNames.bg} />
-    </motion.div>
+    </section>
   );
 }
 

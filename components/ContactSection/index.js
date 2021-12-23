@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { motion } from "framer-motion";
 import classNames from "./ContactSection.module.scss";
 
 function ContactSection() {
@@ -67,12 +66,7 @@ function ContactSection() {
   };
 
   return (
-    <motion.div
-      initial={{ x: "10%", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: "-10%", opacity: 0 }}
-      className={classNames.ContactSection}
-    >
+    <section className={classNames.ContactSection}>
       <div className={classNames.title}>
         <span className={classNames.main}>CONTACT</span>
         <div className={classNames.inTitle}>
@@ -193,7 +187,7 @@ function ContactSection() {
           </label>
         </form>
       </div>
-    </motion.div>
+    </section>
   );
 }
 
