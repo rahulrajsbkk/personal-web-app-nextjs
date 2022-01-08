@@ -15,7 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     color: $text-color;
-    .pageWrap {
+    .pageWrap,
+    > div {
       height: 0;
       flex: 1;
       display: flex;
